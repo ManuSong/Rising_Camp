@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#22171010"
     tools:context=".MainPageActivity"
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:background="@color/white">
 
         <TextView
             android:id="@+id/address_point"
@@ -56,170 +58,666 @@
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         app:tabMode="scrollable"
         app:tabTextColor="@color/black"
         app:tabSelectedTextColor="@color/white"
         app:tabIndicatorHeight="50dp">
 
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="배민1"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배민1"/>
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="배달"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배달"/>
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="포장"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="포장"/>
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="B마트1"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B마트1"/>
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="배민스토어" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="배민스토어" />
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="쇼핑라이브" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="쇼핑라이브" />
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="선물하기" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선물하기" />
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="전국별미" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전국별미" />
 
 
 
     </com.google.android.material.tabs.TabLayout>
 
-    <HorizontalScrollView
+
+
+
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:scrollbars="none">
 
-        <LinearLayout
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:background="@color/white"
+            android:orientation="vertical">
 
 
-            <ImageView
-                android:id="@+id/main_page_ad1"
-                android:layout_width="410dp"
-                android:layout_height="130dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/main_ad_01" />
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:scrollbars="none">
 
-            <ImageView
-                android:layout_width="410dp"
-                android:layout_height="130dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/main_ad_02" />
-
-            <ImageView
-                android:layout_width="410dp"
-                android:layout_height="130dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/main_ad_03" />
-
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
 
-    </HorizontalScrollView>
+                    <ImageView
+                        android:id="@+id/main_page_ad1"
+                        android:layout_width="410dp"
+                        android:layout_height="130dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/main_ad_01" />
 
-    <HorizontalScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:scrollbars="none">
+                    <ImageView
+                        android:layout_width="410dp"
+                        android:layout_height="130dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/main_ad_02" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="100dp">
+                    <ImageView
+                        android:layout_width="410dp"
+                        android:layout_height="130dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/main_ad_03" />
 
-        <ImageView
-            android:id="@+id/select_ad_img"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/select_ad_img2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/select_ad_img" />
-
-        <ImageView
-            android:id="@+id/select_ad_img2"
-            app:layout_constraintStart_toEndOf="@+id/select_ad_img"
-            app:layout_constraintEnd_toStartOf="@id/select_ad_img3"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/select_ad_img2" />
-
-        <ImageView
-            android:id="@+id/select_ad_img3"
-            app:layout_constraintStart_toEndOf="@+id/select_ad_img2"
-            app:layout_constraintEnd_toStartOf="@id/select_ad_img4"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/select_ad_img3" />
-
-        <ImageView
-            android:id="@+id/select_ad_img4"
-            app:layout_constraintStart_toEndOf="@+id/select_ad_img3"
-            app:layout_constraintEnd_toStartOf="@id/select_ad_img4"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/select_ad_img4" />
-
-        <ImageView
-            android:id="@+id/select_ad_img5"
-            app:layout_constraintStart_toEndOf="@+id/select_ad_img4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/select_ad_img5" />
+                </LinearLayout>
 
 
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:scrollbars="none">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:id="@+id/select_ad_img"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/select_ad_img2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/select_ad_img" />
+
+                    <ImageView
+                        android:id="@+id/select_ad_img2"
+                        app:layout_constraintStart_toEndOf="@+id/select_ad_img"
+                        app:layout_constraintEnd_toStartOf="@id/select_ad_img3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/select_ad_img2" />
+
+                    <ImageView
+                        android:id="@+id/select_ad_img3"
+                        app:layout_constraintStart_toEndOf="@+id/select_ad_img2"
+                        app:layout_constraintEnd_toStartOf="@id/select_ad_img4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/select_ad_img3" />
+
+                    <ImageView
+                        android:id="@+id/select_ad_img4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/select_ad_img4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/select_ad_img4"
+                        app:layout_constraintStart_toEndOf="@+id/select_ad_img3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/select_ad_img5"
+                        app:layout_constraintStart_toEndOf="@+id/select_ad_img4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/select_ad_img5" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rowCount="8"
+                app:columnCount="5">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/divide_img_01"
+                    app:layout_gravity="center"
+                    android:paddingRight="14dp"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/divide_img_02"
+                    app:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/divide_img_03"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/divide_img_04"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/divide_img_05"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="돈까스.회.일식"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:text="중식"/>
+
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:text="치킨"/>
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="백반,죽,국수"/>
+
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:layout_marginRight="3dp"
+                    android:text="카페,디저트"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/divide_img_06"
+                    app:layout_gravity="center"
+                    android:paddingRight="14dp"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/divide_img_07"
+                    app:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/divide_img_08"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/divide_img_09"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/divide_img_10"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="분식"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:text="찜,탕,찌개"/>
+
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:text="피자"/>
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="양식"/>
+
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:layout_marginRight="3dp"
+                    android:text="고기,구이"/>
+
+                <ImageView
+                    android:layout_width="73dp"
+                    android:layout_height="69dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="14dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/divide_img_11"
+                    app:layout_gravity="center" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/divide_img_12"
+                    app:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/divide_img_13"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_gravity="center"
+                    android:paddingLeft="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/divide_img_14"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/divide_img_15"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="족발"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:text="아시안"/>
+
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:text="패스트푸드"/>
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:text="야식"/>
+
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:text="도시락"/>
+
+                <ImageView
+                    android:layout_width="73dp"
+                    android:layout_height="69dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="14dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/divide_img_16"
+                    app:layout_gravity="center" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/divide_img_17"
+                    app:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/divide_img_18"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:layout_gravity="center"
+                    android:paddingLeft="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/divide_img_19"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/divide_img_20"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="브랜드관"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/bmdohyeon_ttf"
+                    android:text="맛집랭킹"/>
 
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </HorizontalScrollView>
+            </androidx.gridlayout.widget.GridLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:tabMode="scrollable"
+                android:layout_marginTop="5dp"
+                app:tabTextColor="@color/grey_dark"
+                app:tabSelectedTextColor="#8B4513"
+                app:tabIndicatorHeight="0dp">
+
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="배달팁 낮은 순"/>
+
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기본순"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="주문 많은 순"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="별점 높은 순"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가까운 순" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="찜 많은 순" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="최소주문금액"
+                    android:pointerIcon="arrow"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기타" />
+
+
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/ad_img_01"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ad_imh_02"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/ad_img_03"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/ad_img_04"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitXY"/>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:labelVisibilityMode="labeled"
+        app:itemBackground="@color/white"
+        app:menu="@menu/btm_navi_menu"
+        app:itemIconSize="@dimen/icon_size"
+        app:itemTextColor="@color/black">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+
 
 
 
