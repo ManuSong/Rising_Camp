@@ -10,4 +10,5 @@
     <color name="grey">#19000000</color>
     <color name="grey_dark">#560C0A0A</color>
     <color name="bm_color">#2ac1bc</color>
+    <color name="clear">#00000000</color>
 </resources>

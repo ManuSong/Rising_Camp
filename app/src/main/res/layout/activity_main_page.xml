@@ -62,7 +62,8 @@
         app:tabMode="scrollable"
         app:tabTextColor="@color/black"
         app:tabSelectedTextColor="@color/white"
-        app:tabIndicatorHeight="50dp">
+        app:tabBackground="@drawable/tab_background"
+        app:tabIndicatorHeight="0dp">
 
 
         <com.google.android.material.tabs.TabItem
@@ -600,11 +601,12 @@
 
             <com.google.android.material.tabs.TabLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 app:tabMode="scrollable"
                 android:layout_marginTop="5dp"
                 app:tabTextColor="@color/grey_dark"
                 app:tabSelectedTextColor="#8B4513"
+                app:tabBackground="@drawable/tab_selected_bg_btm"
                 app:tabIndicatorHeight="0dp">
 
 
@@ -701,6 +703,9 @@
 
     </ScrollView>
 
+
+
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
@@ -711,8 +716,20 @@
         app:itemIconSize="@dimen/icon_size"
         app:itemTextColor="@color/black">
 
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            android:src="@drawable/menu_img_03"
+            android:layout_gravity="center"/>
+
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+
+
 
 
 

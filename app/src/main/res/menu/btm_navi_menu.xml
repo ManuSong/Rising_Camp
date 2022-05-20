@@ -16,7 +16,6 @@
     <item
         android:id="@+id/tab_logo"
         android:enabled="true"
-        android:icon="@drawable/menu_img_03"
         android:title=""/>
 
     <item
